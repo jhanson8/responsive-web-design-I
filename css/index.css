@@ -283,6 +283,75 @@ section#serviceTwo {
 }
 
 /* Media Query Section: For 500px & 800px */
+/* 800px */
+@media (max-width: 800px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+  }
+
+  a.button {}
+
+  .navigation {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1.IOD {
+    display: flex;
+    justify-content: center;
+  }
+
+  button.button2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circleImage {
+    display: none;
+  }
+
+  /*
+  div.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.sectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.boxTwo {
+    width: auto;
+  }
+
+  div.boxThree {
+    width: auto;
+  }
+  */
+}
+
+/*500px*/
 @media (max-width:500px) {
   nav {
     display: flex;
