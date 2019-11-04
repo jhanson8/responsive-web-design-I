@@ -1,3 +1,342 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+flex
 
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+  color: grey;
+  margin: 1%;
+  padding: 2%;
+}
+
+a.logo {
+  margin: 5px;
+  padding: 5px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  margin: 2%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+h1 {
+  font-size: 90px;
+  padding: 4%;
+}
+
+header#services {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: .7%;
+  margin-top: 1px;
+}
+
+h2 {
+  text-align: left;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin: 3%;
+  padding: 1%
+}
+
+button.button2 {
+  font-size: 20px;
+  color: black;
+  border: 2px solid grey;
+  padding: 2%;
+  margin: 2%;
+}
+
+.box {
+  width: 40%;
+  padding: 2%;
+}
+
+.boxTwo {
+  width: 40%;
+  margin: 3%;
+  padding: 1%;
+}
+
+.boxThree {
+  width: 24.5%;
+  margin: 3%;
+  padding: 1%;
+}
+
+.middle-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-radius: 5px;
+}
+
+.services-header-img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  padding: 4%;
+  border-radius: 2%;
+}
+
+.contact {
+  margin-left: 4.5%;
+  margin-right: 4.5%;
+  margin-top: 3%;
+  padding: 3%;
+  border-top: 1px solid black;
+}
+
+#stickyNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: #add8e6;
+}
+
+.button2 {
+  border-radius: 4px;
+  background-color: #0080ff;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button2:hover span {
+  padding-right: 25px;
+}
+
+.button2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a.button {
+  background-color: #FFFF99;
+  border-radius: 10px;
+  padding: 1%;
+  transition: 0.3s;
+}
+
+a.button:hover {
+  background-color: #ffd300;
+  color: white;
+}
+
+section.contact {
+  justify-content: flex-start;
+}
+
+p.serviceParagraph {
+  text-align: left;
+}
+
+.boxs {
+  width: auto;
+  height: auto;
+  background-color: #D3D3D3;
+  border: solid black 1px;
+  padding: 5%;
+}
+
+.serviceSection {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: solid black 1px;
+  margin: 3%;
+  padding: 1%;
+  padding-bottom: 3%;
+}
+
+.serviceButton {
+  border: 1px solid black;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: .6%;
+  padding-bottom: .6%;
+  background-color: #aec6cf;
+}
+
+section#serviceTwo {
+  display: flex;
+  justify-content: space-between;
+  margin: 3%;
+  padding: 1%;
+}
+
+@media (max-width:500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  a.button {}
+
+  .navigation {
+    text-align: center;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50%;
+    margin-top: 15%;
+  }
+
+  h1.IOD {
+    display: flex;
+    justify-content: center;
+  }
+
+  button.button2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .circleImage {
+    display: none;
+  }
+
+  div.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.sectionOne {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.sectionTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
